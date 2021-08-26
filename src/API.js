@@ -1,3 +1,4 @@
+/*
 import {
   SEARCH_BASE_URL,
   POPULAR_BASE_URL,
@@ -74,3 +75,4 @@ const apiSettings = {
 };
 
 export default apiSettings;
+*/
