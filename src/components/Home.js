@@ -16,7 +16,7 @@ import NoImage from '../images/no_image.jpg';
 
 const Home = () => {
 
-    const {state, loading, error, searchTerm, setSearchTerm } = useHomeFetch();
+    const {state, loading, error, searchTerm, setSearchTerm, setIsLoadingMore } = useHomeFetch();
 
     console.log(state);
 
@@ -53,7 +53,7 @@ const Home = () => {
         
         {loading && <Spinner />}
 
-        {!loading && state.page < state.total_pages && <Button text='Load More' />}
+        {!loading && state.page < state.total_pages && <Button text='Load More' callback={() => setIsLoadingMore(true)} />}
 
         </>
     );
