@@ -20,6 +20,8 @@ const Home = () => {
 
     console.log(state);
 
+    if (error) return <div>OOPS... something went wrong...!!</div>
+
     return (
         <>
         
