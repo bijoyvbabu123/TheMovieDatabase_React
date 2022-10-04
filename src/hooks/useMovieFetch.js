@@ -20,7 +20,7 @@ export const useMovieFetch = (movieId) => {
 
                 // get directors
                 const directors = credits.crew.filter(
-                    member => member.job == 'Director'
+                    member => member.job === 'Director'
                 );
 
                 setState({

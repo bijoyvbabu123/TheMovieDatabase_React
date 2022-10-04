@@ -20,6 +20,6 @@ export const Image = styled.img`
     display: block;
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
 `;
